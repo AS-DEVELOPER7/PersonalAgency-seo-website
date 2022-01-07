@@ -30,6 +30,10 @@
       .person {
         margin-top: 1.2em;
         width: 90%;
+
+        .avatar {
+          height: 100vh;
+        }
         .info {
           display: flex;
           flex-direction: column;
