@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  padding: 2.3em;
+  .cardL {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    .imgContainer {
+      width: 30%;
+      margin: 0.5em;
+      &:nth-child(3) {
+        border-top-right-radius: 50%;
+        overflow: hidden;
+      }
+      &:nth-child(4) {
+        border-bottom-left-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+  .cardS {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      align-self: flex-start;
+      font-size: 2.5em;
+      color: rgb(38, 39, 38);
+      text-transform: uppercase;
+    }
+    .desc {
+      color: rgb(90, 88, 88);
+      font-weight: 500;
+    }
+    .button {
+      border-radius: 1em;
+      border: none;
+      padding: 0.8em 2em;
+      font-size: 1.1em;
+      background: green;
+      color: white;
+      font-weight: 700;
+      align-self: flex-start;
+      margin-top: 1em;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+
+    .cardS {
+      text-align: center;
+      .title {
+        align-self: center;
+      }
+      .button {
+        align-self: center;
+      }
+    }
+    .cardL {
+      margin-top: 5em;
+      .imgContainer {
+        width: 40%;
+
+        &:nth-child(3) {
+          border-radius: 0%;
+          overflow: visible;
+        }
+        &:nth-child(4) {
+          border-radius: 0%;
+          overflow: visible;
+        }
+        &:nth-child(2) {
+          border-top-right-radius: 50%;
+          overflow: hidden;
+        }
+        &:nth-child(5) {
+          border-bottom-left-radius: 50%;
+          overflow: hidden;
+        }
+      }
+      &::before {
+        content: "Projects";
+        width: 100%;
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

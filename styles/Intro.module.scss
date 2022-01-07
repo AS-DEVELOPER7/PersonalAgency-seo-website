@@ -1,0 +1,48 @@
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  .card {
+    flex: 1;
+    padding: 5em;
+    position: relative;
+    font-size: 1.5em;
+    .brand {
+      color: green;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 1em;
+      margin: 0;
+    }
+    .button {
+      border: none;
+      background-color: green;
+      color: white;
+      border-radius: 0.5em;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 0.5em 0.7em;
+      margin-top: 1.3em;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    .card {
+      padding: 2.2em;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: -3em;
+      .desc {
+        display: none;
+      }
+    }
+  }
+}

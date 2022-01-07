@@ -1,0 +1,89 @@
+.navbar {
+  height: 3em;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 5em;
+  justify-content: space-between;
+  z-index: 1000000;
+  .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    flex: 1;
+  }
+  .list {
+    list-style: none;
+    display: flex;
+    flex: 3;
+    justify-content: space-evenly;
+    .listitem {
+      font-size: 1em;
+      cursor: pointer;
+      color: lightgray;
+      font-weight: 700;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    position: relative;
+    padding: 0 2em;
+    .logo {
+      text-align: start;
+    }
+    .list {
+      display: none;
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 1.5em;
+      height: 1em;
+      cursor: pointer;
+      .line {
+        width: 100%;
+        height: 3px;
+        background: white;
+      }
+    }
+    .menu {
+      position: fixed;
+      height: calc(100vh - 3em);
+      width: 50vw;
+      background: black;
+      top: 2.9em;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 9999;
+      transition: all 1s ease;
+
+      &:active {
+        .menu {
+          display: flex;
+        }
+      }
+      .menuitem {
+        border-bottom: 2px solid whitesmoke;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3em;
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}

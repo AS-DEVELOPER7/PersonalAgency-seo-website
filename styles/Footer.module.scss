@@ -1,0 +1,56 @@
+.footer {
+  border-top: 3px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+  padding: 2em;
+  .cardL {
+    flex: 2;
+    .title {
+      font-weight: bolder;
+      font-size: 2.5em;
+      color: green;
+      width: max-content;
+    }
+    .linkTitle {
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 1.7em;
+    }
+  }
+  .cardS {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .cardItem {
+      font-size: 1em;
+      margin-bottom: 1em;
+      color: rgb(32, 32, 32);
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: 8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cardL {
+      .title {
+        font-size: 2em;
+      }
+      .linkTitle {
+        text-align: center;
+      }
+    }
+    .cardS {
+      width: 100%;
+      .cardItem {
+        text-align: center;
+      }
+    }
+  }
+}
