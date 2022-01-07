@@ -18,9 +18,9 @@ const Intro = () => {
         <button className={styles.button}>DISCOVER</button>
       </div>
       <div className={styles.card}>
-        <Image
+        <img
           className={styles.img}
-          src={process.env.NEXT_PUBLIC_URL + "/img/Avocado.png"}
+          src="/img/Avocado.png"
           alt=""
           height="100%"
           width="100%"
