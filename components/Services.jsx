@@ -16,7 +16,7 @@ const Services = ({ services }) => {
               <div className={styles.media}>
                 {service.video ? (
                   <video
-                    src="https://media.istockphoto.com/videos/slices-of-the-delicious-fresh-peach-are-bouncing-on-the-white-video-id1272837445"
+                    src={`${process.env.NEXT_PUBLIC_URL}/img/${service.video}`}
                     autoPlay
                     loop
                     muted
