@@ -21,7 +21,7 @@ const Testimonials = () => {
             <div className={styles.person}>
               <Image
                 className={styles.avatar}
-                src=`/img/${user.avatar}`
+                src={user.avatar}
                 alt=""
                 height="100%"
                 width="100%"
