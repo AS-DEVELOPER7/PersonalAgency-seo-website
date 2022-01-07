@@ -18,9 +18,9 @@ const Intro = () => {
         <button className={styles.button}>DISCOVER</button>
       </div>
       <div className={styles.card}>
-        <img
+        <Image
           className={styles.img}
-          src="/img/Avocado.png"
+          src="https://www.freepnglogos.com/uploads/avocado-png/avocado-aguacate-pencilart-arte-art-playgame-tumblr-sta-35.png"
           alt=""
           height="100%"
           width="100%"
