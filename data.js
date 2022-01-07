@@ -4,8 +4,7 @@ export const data = [
     name: "design",
     title: "Design",
     desc: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
-    video: "Avocado.mp4",
-    photo: "asdasd.png",
+    photo: "Design.jpeg",
     longDesc:
       "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.",
     images: [
@@ -146,7 +145,8 @@ export const users = [
   {
     id: 1,
     logo: "yahoo.png",
-    avatar: "user1.jpeg",
+    avatar:
+      "https://images.unsplash.com/photo-1551022372-0bdac482b9d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
     comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
     name: "Harold Brown",
@@ -155,7 +155,8 @@ export const users = [
   {
     id: 2,
     logo: "google.png",
-    avatar: "user2.jpeg",
+    avatar:
+      "https://images.unsplash.com/photo-1554230505-919a13968970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
     comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
     name: "Anna Taylor",
@@ -164,7 +165,8 @@ export const users = [
   {
     id: 3,
     logo: "facebook.png",
-    avatar: "user3.jpeg",
+    avatar:
+      "https://images.unsplash.com/photo-1519764622345-23439dd774f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
     comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Utconsectetur veniam fugiat labore quaerat possimus laudantium.",
     name: "James Garry",
