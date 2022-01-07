@@ -19,7 +19,7 @@ const Testimonials = () => {
           <div key={user.id} className={styles.card}>
             <p className={styles.comment}>{user.comment}</p>
             <div className={styles.person}>
-              <Image
+              <img
                 className={styles.avatar}
                 src={`${process.env.NEXT_PUBLIC_URL}/img/${user.avatar}`}
                 alt=""
