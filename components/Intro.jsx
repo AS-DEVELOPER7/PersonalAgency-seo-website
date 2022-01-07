@@ -20,10 +20,11 @@ const Intro = () => {
       <div className={styles.card}>
         <Image
           className={styles.img}
-          src="https://www.freepnglogos.com/uploads/avocado-png/avocado-aguacate-pencilart-arte-art-playgame-tumblr-sta-35.png"
+          src="https://png.pngitem.com/pimgs/s/113-1136397_avocado-png-image-avocado-png-clipart-transparent-png.png"
           alt=""
           height="100%"
           width="100%"
+          backgroundColor="transparent"
           layout="responsive"
           objectFit="contain"
         />
