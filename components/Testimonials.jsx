@@ -19,9 +19,9 @@ const Testimonials = () => {
           <div key={user.id} className={styles.card}>
             <p className={styles.comment}>{user.comment}</p>
             <div className={styles.person}>
-              <img
+              <Image
                 className={styles.avatar}
-                src={`${process.env.NEXT_PUBLIC_URL}/img/${user.avatar}`}
+                src="https://media.istockphoto.com/videos/slices-of-the-delicious-fresh-peach-are-bouncing-on-the-white-video-id1272837445"
                 alt=""
                 height="100%"
                 width="100%"
