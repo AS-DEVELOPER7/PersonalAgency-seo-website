@@ -14,24 +14,14 @@ const Services = ({ services }) => {
               <div className={styles.desc}>{service.desc}</div>
               <span className={styles.cat}>{service.title}</span>
               <div className={styles.media}>
-                {service.video ? (
-                  <video
-                    src={`${process.env.NEXT_PUBLIC_URL}/img/${service.video}`}
-                    autoPlay
-                    loop
-                    muted
-                    className={styles.video}
-                  />
-                ) : (
-                  <Image
-                    alt=""
-                    src={`/img/${service.photo}`}
-                    width="100%"
-                    height="100%"
-                    objetFit="cover"
-                    layout="responsive"
-                  />
-                )}
+                <Image
+                  alt=""
+                  src={`/img/${service.photo}`}
+                  width="100%"
+                  height="100%"
+                  objetFit="cover"
+                  layout="responsive"
+                />
               </div>
             </div>
           </Link>
