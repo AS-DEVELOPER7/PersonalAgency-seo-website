@@ -21,7 +21,7 @@ const Testimonials = () => {
             <div className={styles.person}>
               <Image
                 className={styles.avatar}
-                src="https://media.istockphoto.com/videos/slices-of-the-delicious-fresh-peach-are-bouncing-on-the-white-video-id1272837445"
+                src=`/img/${user.avatar}`
                 alt=""
                 height="100%"
                 width="100%"
